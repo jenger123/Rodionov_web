@@ -1,0 +1,119 @@
+body{
+    display:grid;
+    font-family: 'Cormorant_Infant','Arial';
+    color:yellow;
+    background: url(./back.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed; 
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows:auto;
+    grid-gap:10px;
+    grid-template-areas: 
+    "a a a a"
+    "b b b b"
+    "c c c c"
+    "d d d d"
+    ". link1 jpg1 ."
+    ". link2 jpg2 ."
+    ". link3 jpg3 ."
+    ". link4 jpg4 ."
+    "name name name name";
+    
+    
+}
+a{
+    justify-self:center;
+    margin-top: 25%;
+    font-size: 30px;
+    height: max-content;
+    background-color: rgba(125,7,15,0.5);
+    color: white;
+    border: 2px;
+    border-style:dotted;
+    text-decoration: solid;
+    
+
+}
+
+img{
+    width: 300px;
+    height: auto;
+    justify-self: center;
+    border:3px rgba(255, 47, 0, 0.896) solid;
+    
+}
+
+@font-face {
+    font-family: Cormorant_Infant;
+    src: url(./fonts/CormorantInfant-Regular.ttf);
+}
+
+
+
+
+h1 {
+    /*background-color: rgb(21, 40, 84);*/
+    width: max-content;
+    color: rgb(214, 246, 3);
+    grid-area: a;
+    text-align: center;
+    justify-self: center;
+}
+
+h2 {
+grid-area: b;
+justify-self: center;
+}
+
+p {
+    grid-area:c;
+    align-self:end;
+    margin-left:25%;
+    font-size: 20px;
+}
+
+h3{
+    grid-area:d;
+    justify-self: center;
+    font-size: 40px;
+}
+
+
+
+#warlink{
+grid-area: link1;
+}
+#warjpg{
+grid-area:jpg1;
+
+}
+#berserklink{
+grid-area: link2;
+
+}
+#berserkjpg{
+    grid-area:jpg2;
+}
+#tenlink{
+grid-area: link3;
+}
+#tenjpg{
+    grid-area:jpg3;
+}
+#streloklink{
+    grid-area: link4;
+    }
+#strelokjpg{
+        grid-area:jpg4;
+}
+#autors{
+    grid-area:name;
+    justify-self: center;
+    margin-left: 0%;
+}
+#leo{
+    font: size 20px;color: black;font-style:italic;border:0px;background: none;text-decoration: underline;
+}
+#vlad{
+    font: size 20px;color: black;font-style: italic;border:0px;background: none;text-decoration: underline;
+}

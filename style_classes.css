@@ -1,0 +1,107 @@
+body{
+    display: grid;
+    color: yellow;
+    font-family: 'Cormorant_Infant';
+    background:url(./back.jpg);
+    background-size: 125% 125%;
+    grid-template-columns: auto auto;
+    grid-gap:5px;
+    grid-template-areas: 
+    "hello hello"
+    "desc desc"
+    "a a"
+    "b b"
+    "list1 im"
+    "list2 im"
+    "list3 im"
+    "list4 im"
+    "list5 im"
+    "list6 im"
+    "button main_menu";
+}
+
+a{
+    color: black;
+}
+img{
+    border:2px;
+    border-color:red;
+    border-style: solid;
+    height: 15px;
+}
+
+
+div{
+    justify-content: center;
+    margin-left:25%;
+    font-size: 20px;
+    height: max-content;
+    
+}
+@font-face {
+    font-family: Cormorant_Infant;
+    src: url(./fonts/CormorantInfant-Regular.ttf);
+}
+h1{
+    grid-area:hello;
+    justify-self: center;
+}
+h2{
+    grid-area:desc
+}
+#opisanie{
+    grid-area:a;
+    font-size: 15px;
+}
+h3{
+    grid-area: b;
+    font-size: 20px;
+}
+#characteristic{
+grid-area:list
+}
+#woin{
+    grid-area: im;
+    width: 500px;
+    height: 500px;
+    justify-self: center;
+    border: solid brown 3px;
+}
+button{
+    background-color: brown;
+    margin-top:10px;
+    width: max-content;
+    height: max-content;
+    margin-left: 50px;
+    color: black;
+    font-size: 20px;
+}
+#choose{
+    grid-area:button;
+    justify-self: right;
+    margin-left:200px;
+    
+}
+
+#main_menu{
+    grid-area: main_menu;
+    justify-self: left;
+}
+#d1{
+grid-area:list1;
+}
+#d2{
+grid-area:list2;
+}
+#d3{
+grid-area:list3;
+}
+#d4{
+grid-area:list4;
+}
+#d5{
+grid-area:list5;
+}
+#d6{
+grid-area:list6;
+}
